@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bản đồ Hà Nội</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+</head>
+<body>
+    <h2 style="position:absolute;top:10px;left:10px;z-index:1000;color:#333;">Tìm đường đi</h2>
+    <div id="route-inputs">
+        <input id="start" type="text" placeholder="Nhập điểm bắt đầu"><br>
+        <input id="end" type="text" placeholder="Nhập điểm đến"><br>
+        <button id="findRoute">Tìm đường</button>
+    </div>
+
+    <div id="map"></div>
+
+    <!-- Load thư viện JS theo đúng thứ tự -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

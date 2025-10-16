@@ -1,0 +1,54 @@
+/* Đặt lại margin và padding mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Làm cho bản đồ full màn hình */
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Hộp nhập địa chỉ */
+#route-inputs {
+  position: absolute;
+  top: 15px;
+  left: 10%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: white;
+  padding: 12px 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+#route-inputs input {
+  width: 250px;
+  padding: 8px 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#route-inputs button {
+  background: #0078ff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#route-inputs button:hover {
+  background: #005ecc;
+}
